@@ -17,7 +17,4 @@ bot.on('ready', function(){
 });
 
 bot.on('message', function(message){
-	if (message.content == "hello") {
-		message.reply("Hi, how are you?");
-	}
 });
