@@ -3,7 +3,7 @@ const bot = new Commando.Client({
 	commandPrefix: '$'
 });
 
-const BOT_TOKEN = "NDUzNzI4MDI3MTU1ODkwMTk2.Ds-3eA.8tOsQzbplbN3ZO3jWb-cV5vsYi4";
+const BOT_TOKEN = process.env.TOKEN;
 
 bot.registry.registerGroup('simple', 'simple');
 bot.registry.registerGroup('conversion', 'conversion');
