@@ -3,14 +3,14 @@ const bot = new Commando.Client({
 	commandPrefix: '$'
 });
 
-const TOKEN = PROCESS.ENV.TOKEN;
+const BOT_TOKEN = PROCESS.ENV.TOKEN;
 
 bot.registry.registerGroup('simple', 'simple');
 bot.registry.registerGroup('conversion', 'conversion');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
-bot.login(TOKEN);
+bot.login(BOT_TOKEN);
 
 bot.on('ready', function(){
     console.log('Ready!');
