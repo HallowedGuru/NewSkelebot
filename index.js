@@ -13,8 +13,10 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 bot.login(BOT_TOKEN);
 
 bot.on('ready', function(){
+	bot.user.setGame('$help');
     console.log('Ready!');
 });
 
 bot.on('message', function(message){
+	
 });
