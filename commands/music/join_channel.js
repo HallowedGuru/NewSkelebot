@@ -19,6 +19,9 @@ class JoinChannelCommand extends commando.Command {
 							message.reply("Successfully joined.");
 						});
 				}
+				else {
+					message.reply("I am already in a voice channel.");
+				}
 			}
 			else {
 				message.reply("You must be in a voice channel to use this command.");
