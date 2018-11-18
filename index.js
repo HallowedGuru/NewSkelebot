@@ -14,7 +14,6 @@ bot.login(BOT_TOKEN);
 
 bot.on('ready', function(){
     console.log('Ready!');
-	bot.user.setGame('$help | @Skelebot help');
 });
 
 bot.on('message', function(message){
