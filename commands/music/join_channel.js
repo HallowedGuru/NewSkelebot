@@ -4,7 +4,7 @@ class JoinChannelCommand extends commando.Command {
 	constructor(client) {
 		super(client,{
 			name: 'join',
-			group: 'simple',
+			group: 'music',
 			memberName: 'join',
 			description: 'Joins a voice channel.'
 		});

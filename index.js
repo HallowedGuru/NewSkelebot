@@ -5,9 +5,9 @@ const bot = new Commando.Client({
 
 const BOT_TOKEN = process.env.TOKEN;
 
-bot.registry.registerGroup('simple', 'simple');
-bot.registry.registerGroup('music', 'music');
-bot.registry.registerGroup('conversion', 'conversion');
+bot.registry.registerGroup('simple', 'Simple');
+bot.registry.registerGroup('music', 'Music');
+bot.registry.registerGroup('conversion', 'Conversion');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 

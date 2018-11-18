@@ -4,7 +4,7 @@ class LeaveChannelCommand extends commando.Command {
 	constructor(client) {
 		super(client,{
 			name: 'leave',
-			group: 'simple',
+			group: 'music',
 			memberName: 'leave',
 			description: 'Leaves the voice channel.'
 		});
