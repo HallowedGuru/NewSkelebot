@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client({
-	commandPrefix: '$'
+	commandPrefix: '!!'
 });
 
 const BOT_TOKEN = process.env.TOKEN;
@@ -16,7 +16,7 @@ bot.login(BOT_TOKEN);
 bot.on('ready', function(){
 	bot.user.setPresence({
         game: {
-            name: '$help | @Skelebot help',
+            name: '!!help | @Skelebot help',
             type: 0
         }
     });
