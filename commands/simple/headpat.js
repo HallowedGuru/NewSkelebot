@@ -15,7 +15,7 @@ class HeadpatCommand extends commando.Command {
 		var index = randomNumber(1, 14);
 		message.channel.send("", {
   			files: [
-    				"./images/headpat" + index + ".gif"
+				"./images/headpat" + index + ".gif"
 			]
 		});
 	}
