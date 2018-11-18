@@ -18,7 +18,5 @@ bot.on('ready', function(){
 });
 
 bot.on('message', function(message){
-	if (message.content == "setgame") {
-		bot.user.setGame('$help | @Skelebot help');
-	}
+	
 });
