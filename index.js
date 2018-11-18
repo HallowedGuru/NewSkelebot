@@ -13,7 +13,12 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 bot.login(BOT_TOKEN);
 
 bot.on('ready', function(){
-	bot.user.setGame('$help | @Skelebot help');
+	bot.user.setPresence({
+        game: {
+            name: '$help | @Skelebot help',
+            type: 0
+        }
+    });
     console.log('Ready!');
 });
 
