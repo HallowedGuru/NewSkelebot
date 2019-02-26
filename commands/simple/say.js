@@ -14,6 +14,7 @@ class PlayCommand extends commando.Command {
 
 	async run(message, args) {
 		message.channel.send(args.trim());
+	}
 }
 
 module.exports = SayCommand;
